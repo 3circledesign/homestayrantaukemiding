@@ -22,5 +22,26 @@
   {
     "url": "images/prawn-fishing.jpg",
     "caption": "Freshwater Prawn (Udang Galah) Fishing Trip"
+  },
+  {
+    "url": "images/cultural-performance.jpg",
+    "caption": "Traditional Cultural Performance at the Longhouse"
+  },
+  {
+    "url": "images/scene1.jpg",
+    "caption": "River"
+  },
+  {
+    "url": "images/scene2.jpg",
+    "caption": "River2"
+  },
+  {
+    "url": "images/scene3.jpg",
+    "caption": "Gazebo"
+  },
+  {
+    "url": "images/scene4.jpg",
+    "caption": "Boat Ride"
   }
+
 ]
