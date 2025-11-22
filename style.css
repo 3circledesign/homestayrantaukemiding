@@ -613,7 +613,7 @@ footer{
   position:relative;
   width:100%;
   /* 16:9 aspect ratio – adjust if you want it taller/shorter */
-  padding-top:56.25%;
+  padding-top:45%;
 }
 
 /* Each slide fills the .slides box */
