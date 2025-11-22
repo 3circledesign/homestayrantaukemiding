@@ -1,47 +1,94 @@
 [
   {
-    "url": "images/homestay-exterior.jpg",
-    "caption": "Homestay Rumah Benjamin Angki – Exterior & Longhouse View"
+    "url": "images/antiques.jpg",
+    "caption": "Photo 1"
   },
   {
-    "url": "images/river-scenery.jpg",
-    "caption": "Peaceful River Scenery at Rantau Kemiding"
+    "url": "images/bilik.jpg",
+    "caption": "Photo 2"
+  },
+  {
+    "url": "images/boatrace.jpg",
+    "caption": "Photo 3"
   },
   {
     "url": "images/camping-riverside.jpg",
-    "caption": "Camping by the River – Weekend Activity"
+    "caption": "Photo 4"
+  },
+  {
+    "url": "images/chinaguest.jpg",
+    "caption": "Photo 5"
+  },
+  {
+    "url": "images/cultural-performance.jpg",
+    "caption": "Photo 6"
+  },
+  {
+    "url": "images/fishingroup.jpg",
+    "caption": "Photo 7"
+  },
+  {
+    "url": "images/homestay-exterior.jpg",
+    "caption": "Photo 8"
   },
   {
     "url": "images/kayak-activity.jpg",
-    "caption": "Kayaking along the Calm Kanowit River"
+    "caption": "Photo 9"
   },
   {
-    "url": "images/cultural-performance.jpg",
-    "caption": "Traditional Cultural Performance at the Longhouse"
+    "url": "images/mansu.jpg",
+    "caption": "Photo 10"
+  },
+  {
+    "url": "images/orangputih.jpg",
+    "caption": "Photo 11"
   },
   {
     "url": "images/prawn-fishing.jpg",
-    "caption": "Freshwater Prawn (Udang Galah) Fishing Trip"
+    "caption": "Photo 12"
   },
   {
-    "url": "images/cultural-performance.jpg",
-    "caption": "Traditional Cultural Performance at the Longhouse"
+    "url": "images/river ride.jpg",
+    "caption": "Photo 13"
+  },
+  {
+    "url": "images/river-scenery.jpg",
+    "caption": "Photo 14"
+  },
+  {
+    "url": "images/riverride2.jpg",
+    "caption": "Photo 15"
   },
   {
     "url": "images/scene1.jpg",
-    "caption": "River"
+    "caption": "Photo 16"
   },
   {
     "url": "images/scene2.jpg",
-    "caption": "River2"
+    "caption": "Photo 17"
   },
   {
     "url": "images/scene3.jpg",
-    "caption": "Gazebo"
+    "caption": "Photo 18"
   },
   {
     "url": "images/scene4.jpg",
-    "caption": "Boat Ride"
+    "caption": "Photo 19"
+  },
+  {
+    "url": "images/tourist1.jpg",
+    "caption": "Photo 20"
+  },
+  {
+    "url": "images/tourist2.jpg",
+    "caption": "Photo 21"
+  },
+  {
+    "url": "images/tourist3.jpg",
+    "caption": "Photo 22"
+  },
+  {
+    "url": "images/wedding.jpg",
+    "caption": "Photo 23"
   }
-
 ]

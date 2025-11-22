@@ -114,6 +114,25 @@ nav a:hover{
   box-shadow:0 10px 26px rgba(30,64,175,.25);
 }
 
+/* Top banner above hero */
+.hero-banner{
+  margin-top:18px;
+  margin-bottom:20px;
+  border-radius:var(--radius-xl);
+  overflow:hidden;
+  border:1px solid var(--border);
+  box-shadow:var(--shadow-soft);
+  background:#000; /* fallback while image loads */
+}
+
+.hero-banner img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:180px;          /* control height, adjust if you want taller/shorter */
+  object-fit:cover;          /* nicely crops wide photos */
+}
+
 /* Hero section */
 .hero{
   display:grid;
