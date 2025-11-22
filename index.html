@@ -5,6 +5,7 @@
   <title>HOMESTAY RUMAH BENJAMIN ANGKI & KOPERASI HOMESTAY RH. BENJAMIN ANGKI KANOWIT BERHAD RANTAU KEMIDING,KANOWIT</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
 
@@ -20,8 +21,8 @@
     </div>
     <nav>
       <a href="#home">Home</a>
-      <a href="#packages">Packages</a>
       <a href="#gallery">Gallery</a>
+      <a href="#packages">Packages</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -63,7 +64,7 @@
           <span>→</span>
         </a>
         <a href="#packages" class="btn-ghost">
-          View Packages (EN / BM)
+          View Packages (EN / MY)
         </a>
       </div>
     </div>
@@ -114,19 +115,80 @@
     </div>
   </section>
 
-  <!-- PACKAGES (EN / BM) -->
-  <section id="packages">
-    <h2 class="section-title">Homestay & Activity Packages</h2>
+  <!-- GALLERY SLIDESHOW (ABOVE PACKAGES) -->
+  <section id="gallery" class="gallery">
+    <h2 class="section-title">Photo Gallery</h2>
     <p class="section-sub">
-      Choose from flexible stays, river activities, and special group packages.
-      Information is provided in both English and Bahasa Malaysia.
+      A glimpse of village life, the longhouse, river scenery and activities at Homestay Rantau Kemiding Kanowit.
+      Replace these images with your own real photos in the <code>images</code> folder.
     </p>
 
-    <div class="two-col">
-      <!-- English -->
+    <div class="slideshow" data-autoplay="true">
+      <div class="slides">
+        <div class="slide active">
+          <img src="images/homestay-exterior.jpg" alt="Homestay exterior and longhouse view">
+          <div class="slide-caption">Longhouse &amp; homestay surroundings</div>
+        </div>
+
+        <div class="slide">
+          <img src="images/river-scenery.jpg" alt="River view near Homestay Rantau Kemiding">
+          <div class="slide-caption">Peaceful river scenery</div>
+        </div>
+
+        <div class="slide">
+          <img src="images/camping-riverside.jpg" alt="Camping by the river at night">
+          <div class="slide-caption">Camping by the river (weekend)</div>
+        </div>
+
+        <div class="slide">
+          <img src="images/kayak-activity.jpg" alt="Kayaking activity on the river">
+          <div class="slide-caption">Kayaking adventure</div>
+        </div>
+
+        <div class="slide">
+          <img src="images/cultural-performance.jpg" alt="Cultural dance performance at the longhouse">
+          <div class="slide-caption">Cultural dance &amp; traditional attire</div>
+        </div>
+
+        <div class="slide">
+          <img src="images/prawn-fishing.jpg" alt="Freshwater prawn fishing activity">
+          <div class="slide-caption">Freshwater prawn (Udang Galah) fishing</div>
+        </div>
+      </div>
+
+      <button class="slide-nav prev" aria-label="Previous slide">‹</button>
+      <button class="slide-nav next" aria-label="Next slide">›</button>
+
+      <div class="slide-dots" aria-label="Select slide">
+        <button class="dot active" data-slide="0"></button>
+        <button class="dot" data-slide="1"></button>
+        <button class="dot" data-slide="2"></button>
+        <button class="dot" data-slide="3"></button>
+        <button class="dot" data-slide="4"></button>
+        <button class="dot" data-slide="5"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES WITH LANGUAGE SWITCH -->
+  <section id="packages">
+    <div class="section-header-row">
       <div>
+        <h2 class="section-title">Homestay & Activity Packages</h2>
+        <p class="section-sub">
+          Choose from flexible stays, river activities, and special group packages. Switch between English (EN) and Bahasa Malaysia (MY).
+        </p>
+      </div>
+      <div class="lang-toggle" role="radiogroup" aria-label="Select language">
+        <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+        <button class="lang-btn" data-lang="my" aria-pressed="false">MY</button>
+      </div>
+    </div>
+
+    <div class="packages-wrapper">
+      <!-- ENGLISH PACKAGES -->
+      <div class="packages lang-en active">
         <div class="cards-grid">
-          <!-- English Homestay Packages -->
           <article class="card">
             <div class="card-tag">
               <span>🏡</span><span>Homestay Packages (Minimum 15 pax per group)</span>
@@ -157,7 +219,6 @@
             </ul>
           </article>
 
-          <!-- English Prawn Fishing Package -->
           <article class="card">
             <div class="card-tag">
               <span>🦐</span><span>Freshwater Prawn (Blue Claw) Fishing Package</span>
@@ -177,7 +238,6 @@
             </ul>
           </article>
 
-          <!-- English Optional Activities -->
           <article class="card">
             <div class="card-tag">
               <span>🎯</span><span>Optional Activities (Upon Request)</span>
@@ -192,10 +252,9 @@
         </div>
       </div>
 
-      <!-- Bahasa Malaysia -->
-      <div>
+      <!-- BAHASA MALAYSIA PACKAGES -->
+      <div class="packages lang-my">
         <div class="cards-grid">
-          <!-- BM Homestay Packages -->
           <article class="card">
             <div class="card-tag">
               <span>🏡</span><span>Pakej Homestay (Minimum 15 orang satu kumpulan)</span>
@@ -226,7 +285,6 @@
             </ul>
           </article>
 
-          <!-- BM Prawn Fishing -->
           <article class="card">
             <div class="card-tag">
               <span>🦐</span><span>Pakej Memancing Udang Galah</span>
@@ -246,7 +304,6 @@
             </ul>
           </article>
 
-          <!-- BM Optional Activities -->
           <article class="card">
             <div class="card-tag">
               <span>🎯</span><span>Aktiviti Pilihan (atas permintaan)</span>
@@ -260,47 +317,6 @@
           </article>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- GALLERY -->
-  <section id="gallery" class="gallery">
-    <h2 class="section-title">Photo Gallery</h2>
-    <p class="section-sub">
-      A glimpse of village life, the longhouse, river scenery and activities at Homestay Rantau Kemiding Kanowit.
-    </p>
-
-    <div class="gallery-grid">
-      <!-- Replace src paths with your real images, e.g. images/rumah-panjang.jpg -->
-      <figure class="gallery-item">
-        <img src="images/homestay-exterior.jpg" alt="Homestay exterior and longhouse view">
-        <figcaption class="gallery-caption">Longhouse &amp; homestay surroundings</figcaption>
-      </figure>
-
-      <figure class="gallery-item">
-        <img src="images/river-scenery.jpg" alt="River view near Homestay Rantau Kemiding">
-        <figcaption class="gallery-caption">Peaceful river scenery</figcaption>
-      </figure>
-
-      <figure class="gallery-item">
-        <img src="images/camping-riverside.jpg" alt="Camping by the river at night">
-        <figcaption class="gallery-caption">Camping by the river (weekend)</figcaption>
-      </figure>
-
-      <figure class="gallery-item">
-        <img src="images/kayak-activity.jpg" alt="Kayaking activity on the river">
-        <figcaption class="gallery-caption">Kayaking adventure</figcaption>
-      </figure>
-
-      <figure class="gallery-item">
-        <img src="images/cultural-performance.jpg" alt="Cultural dance performance at the longhouse">
-        <figcaption class="gallery-caption">Cultural dance &amp; traditional attire</figcaption>
-      </figure>
-
-      <figure class="gallery-item">
-        <img src="images/prawn-fishing.jpg" alt="Freshwater prawn fishing activity">
-        <figcaption class="gallery-caption">Freshwater prawn (Udang Galah) fishing</figcaption>
-      </figure>
     </div>
   </section>
 
@@ -379,7 +395,6 @@
    target="_blank"
    rel="noopener"
    aria-label="Chat on WhatsApp with Homestay Rantau Kemiding">
-  <!-- Simple WhatsApp SVG icon -->
   <svg class="wa-icon" viewBox="0 0 32 32" aria-hidden="true">
     <path d="M16.04 3C9.42 3 4 8.42 4 15.04c0 2.65.87 5.1 2.36 7.1L4 29l7-2.29a11.94 11.94 0 0 0 5.04 1.12c6.62 0 12.04-5.42 12.04-12.04C28.08 8.42 22.66 3 16.04 3zm0 21.44c-1.7 0-3.36-.45-4.82-1.31l-.35-.2-4.15 1.36 1.36-4.05-.22-.36a8.55 8.55 0 0 1-1.33-4.56c0-4.76 3.87-8.63 8.63-8.63 4.76 0 8.63 3.87 8.63 8.63 0 4.76-3.87 8.63-8.63 8.63zm4.73-6.3c-.26-.13-1.53-.76-1.77-.85-.24-.09-.42-.13-.6.13-.18.26-.69.85-.85 1.03-.16.18-.31.2-.57.07-.26-.13-1.09-.4-2.07-1.28-.77-.69-1.29-1.53-1.44-1.79-.15-.26-.02-.4.11-.53.11-.11.26-.29.4-.44.13-.15.18-.26.26-.44.09-.18.04-.33-.02-.46-.07-.13-.6-1.45-.82-1.98-.22-.53-.44-.46-.6-.46-.16 0-.33-.02-.51-.02-.18 0-.46.07-.7.33-.24.26-.92.9-.92 2.19 0 1.29.95 2.54 1.08 2.71.13.18 1.88 2.87 4.56 4.02 2.68 1.15 2.68.77 3.16.72.48-.04 1.53-.62 1.75-1.24.22-.62.22-1.15.16-1.24-.07-.09-.24-.16-.51-.29z"/>
   </svg>
